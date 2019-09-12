@@ -838,12 +838,6 @@ img {
   }
 }
 
-@media (max-width: 410px) {
-  #menuToggle {
-    left: -4px !important;
-  }
-}
-
 .navbar__mobile-line {
   border: none;
   height: 4px;
@@ -861,7 +855,7 @@ img {
   display: block;
   position: relative;
   top: 15px;
-  left: 50px;
+  left: 15px;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -877,12 +871,14 @@ img {
   position: absolute;
   top: -7px;
   left: -5px;
+  overflow: hidden;
   cursor: pointer;
+  outline: none;
   opacity: 0;
   /* hide this */
   z-index: 2;
   /* and place it over the hamburger */
-  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #menuToggle span {

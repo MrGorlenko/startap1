@@ -14,15 +14,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
     }
   }
 }
 
-@media (max-width: 410px){
-    #menuToggle{
-        left: -4px !important;
-    }
-}
+
 
 .navbar{
     &__mobile{
@@ -45,16 +42,20 @@
   display: block;
   position: relative;
   top: 15px;
-  left: 50px;
+  left: 15px;
   
   z-index: 1;
   
   -webkit-user-select: none;
   user-select: none;
+  // &:hover{
+  //   webkit-tap-highlight-color: transparent;
+  // }
 }
 
 #menuToggle input
 {
+  // webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
   display: block;
   width: 40px;
@@ -62,34 +63,32 @@
   position: absolute;
   top: -7px;
   left: -5px;
-  
+  overflow: hidden;
   cursor: pointer;
-  
+  outline: none;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
+  -webkit-tap-highlight-color: transparent;
   
-  -webkit-touch-callout: none;
+  // -webkit-touch-callout: none;
+
+  
 }
 
 #menuToggle span
 {
-  // left: -4px;
+  // left: 1px;
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-//   background-color:rgba(242, 255, 56, 0.3);
   background: #f2ff38;
   border-radius: 3px;
   
   z-index: 1;
   
   transform-origin: 4px 0px;
-  
-//   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-//               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-//               opacity 0.55s ease;
 }
 
 #menuToggle span:first-child
