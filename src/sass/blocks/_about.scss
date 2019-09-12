@@ -46,7 +46,10 @@
 @media (max-width: 410px){
     .about{
         &__section{
-            height: 615px;
+            height: 560px;
+        }
+        &__text{
+            font-size: 17px;
         }
     }
 }
