@@ -20,7 +20,7 @@
 
 @media (max-width: 410px){
     #menuToggle{
-        left: 0px !important;
+        left: -4px !important;
     }
 }
 
@@ -73,6 +73,7 @@
 
 #menuToggle span
 {
+  // left: -4px;
   display: block;
   width: 33px;
   height: 4px;
@@ -122,7 +123,7 @@
 #menu
 {
   position: absolute;
-  width: 250px;
+  width: 260px;
   height: 600px;
   margin: -100px 0 0 70px;
   padding: 25px;
