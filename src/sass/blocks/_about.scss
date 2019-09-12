@@ -1,0 +1,52 @@
+.about{
+    &__section{
+        height: 385px;
+    }
+    &__title{
+        // font-family: 'Gilam';
+        margin-top: 45px;
+    }
+    &__text{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px;
+        font-family: 'Cisco Sans';
+        color: black;
+    }
+}
+
+@media (max-width: 1250px){
+    .about{
+        &__text{
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 993px){
+    .about{
+        &__text{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .about{
+        &__section{
+            height: 500px;
+        }
+        &__text{
+            text-align: justify;
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .about{
+        &__section{
+            height: 615px;
+        }
+    }
+}

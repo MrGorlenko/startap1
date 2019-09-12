@@ -1,0 +1,247 @@
+.clickbate{
+    display: flex;
+    height: 100%;
+    &__section{
+        height: 600px;
+    }
+    &__title{
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 504px;
+        font-size: 24px;
+    }
+    &__base{
+        font-size: 20px;
+        width: 505px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Gotham Pro Narrow Medium';
+        // &:nth-child(1){
+        //     margin-top: 50px;
+        // }
+        
+    }
+    &__text{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__list{
+        font-size: 23px;
+        width: 496px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-left: 20px;
+    }
+    &__form{
+        width: 50%;
+        height: 100%;
+        // background-color: #f2ff38;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form{
+            margin-top: 40px;
+        }
+        &-title{
+            width: 85%;
+            margin-bottom: 20px;
+        }
+        &-subtitle{
+            width: 250px;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        &-form{
+            &-block{
+                width: 75%;
+            }
+        }
+        &-input{
+            border: 1px solid #333e55;
+            width: 100%;
+            height: 70px;
+            &-block{
+                width: 75%;
+            }
+        }
+        &-agree{
+            width: 75%;
+            a{
+                padding-left: 5px;
+            }
+        }
+        &-button{
+            width: 100%;
+            height: 65px;
+            background-color: #f2ff38;
+            color: black;
+            text-transform: uppercase;
+            font-family: 'Gotham Pro Black';
+            font-size: 25px;
+            &-block{
+                width: 75%;
+            }
+            &:hover{
+                background-color: darken($color: #f2ff38, $amount: 16);
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px){
+    .clickbate{
+        &__section{
+            height: 530px;
+        }
+        &__title{
+            margin-top: 65px;
+        }
+        &__subtitle{
+            width: 460px;
+            font-size: 22px;
+        }
+        &__base{
+            width: 460px;
+            font-size: 20px;
+        }
+        &__list{
+            font-size: 21px;
+        }
+        &__form{
+            form{
+                margin-top: 95px;
+            }
+            &-input{
+                width: 100%;
+            }
+            &-button{
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 993px){
+    .clickbate{
+        flex-wrap: wrap;
+        &__section{
+            height: 915px;
+        }
+        &__text{
+            width: 100%;
+            height: 50%;
+        }
+        &__list{
+            padding-left: 40px;
+        }
+        &__form{
+            width: 100%;
+            height: 50%;
+            form{
+                width: 85%;
+            }
+            &-agree{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .clickbate{
+        &__subtitle{
+            text-align: center;
+            width: 100%;
+            font-size: 18px;
+        }
+        &__text{
+            height: 45%;
+        }
+        &__base{
+            text-align: center;
+            width: 100%;
+            font-size: 15px;
+        }
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            height: 70px;
+            width: 100%;
+            font-size: 18px;
+            &-element{
+                width: 50%;
+            }
+        }
+        &__form{
+            &-title{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            &-subtitle{
+                width: 190px;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            &-form{
+                
+                
+                &-block{
+                    width: 100%;
+                }
+            }
+            form{
+                margin-top: 0;
+            }
+            &-agree{
+                width: 100%;
+                a{
+                    padding-left: 30px;
+                }
+            }
+            &-button{
+                &-block{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .clickbate{
+        &__base{
+            text-align: justify;
+        }
+        &__list{
+            padding-left: 20px;
+            &-element{
+                font-size: 16px;
+            }
+        }
+        &__form{
+            &-agree{
+                a{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
