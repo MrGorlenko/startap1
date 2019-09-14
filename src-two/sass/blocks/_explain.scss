@@ -1,0 +1,89 @@
+.explain{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+    &__section{
+        height: 475px;
+        // background-color: #f2ff38;
+        background-color: darken( #f2ff38, $amount: 15);
+    }
+    &__title{
+        margin-top: 55px;
+        font-family: 'Gilam';
+    }
+    &__block{
+        position: relative;
+        width: 25%;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-between;
+        &-text{
+            margin-top: 25px;
+            max-width: 181px;
+            text-align: center;
+            font-family: 'Gilam-regular';
+            &-phone{
+                max-width: 120px;
+            }
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        &::after{
+            content: '';
+            // background-image: url(../../img/explain/arrow.png);
+            // background-color: aqua;
+            background-image: url('../../img/explain/arrow.png');
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 275px;
+            top: 15px;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px){
+    .explain{
+        &__block{
+            &::after{
+                left: 215px;
+            }
+        }
+    }
+}
+
+@media (max-width: 993px){
+    .explain{
+        &__section{
+            margin-top: 35px;
+            height: 510px;
+        }
+        &__block{
+            width: 50%;
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .explain{
+        &__section{
+            height: 790px;
+        }
+        &__block{
+            width: 100%;
+        }
+    }
+}

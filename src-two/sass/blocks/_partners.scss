@@ -1,0 +1,101 @@
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+    height: 410px;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 60px;
+    &__section{
+        // background-color: black;
+        // margin-top: -10px;
+        height: 480px;
+    }
+    &__title{
+        color: black;
+        opacity: 0.9;
+    }
+    &__block{
+        width: 30%;
+        height: 300px;
+        // border: 1px solid black;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &:nth-child(2){
+            background-image: url('../../img/partners/partner-one.png')
+        }
+        &:nth-child(3){
+            background-image: url('../../img/partners/partner-two.jpg')
+        }
+        &:nth-child(4){
+            background-image: url('../../img/partners/partner-three.jpg')
+        }
+    }
+}
+
+
+@media (max-width: 1250px){
+    .partners{
+        height: 375px;
+        margin-top: 0;
+        margin-top: 35px;
+        &__section{
+            height: 430px;
+        }
+        &__block{
+            height: 275px;
+        }
+    }
+}
+
+@media (max-width: 993px){
+    .partners{
+        height: 100%;
+        &__section{
+            margin-top: 70px;
+            height: 650px;
+        }
+        &__block{
+            width: 48%;
+            &:nth-child(4){
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .partners{
+        margin-top: 0;
+        &__section{
+            margin-top: 25px;
+            height: 900px;
+        }
+        &__title{
+            margin-bottom: 15px;
+        }
+        &__block{
+            width: 100%;
+            margin: 20px 0;
+            &:nth-child(2){
+                margin: 0 0 0 0;
+                
+            }
+            // &:last-child{
+            //     margin: 20px 0;
+            // }
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .partners{
+        &__section{
+            height: 700px;
+        }
+        &__block{
+            height: 200px;
+        }
+    }
+}
