@@ -25,10 +25,12 @@
             font-size: 25px;
             margin-bottom: 6px;
             font-family: 'Cisco Sans';
+            color: $section-color;
         }
         &-subtitle{
             font-size: 21px;
             font-family: 'Cisco Sans';
+            color: $section-color;
         }
         img{
             height: 400px;
@@ -73,6 +75,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 0;
+    color: $section-color;
     a{
         text-decoration: none;
         color: black;
@@ -102,6 +105,7 @@
             font-family: 'Cisco Sans';
             text-transform: uppercase;
             text-align: end;
+            color: $section-color;
         }
         &-phone{
             display: flex;
@@ -116,7 +120,7 @@
             }
             a{
                 text-decoration: none;
-                color: black;
+                color: $section-color;
                 font-size: 20px;
                 font-family: 'Cisco Sans';
 
@@ -134,6 +138,7 @@
     &__text{
        display: flex;
        width: 170px;
+       color: $section-color;
     }
 }
 

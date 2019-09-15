@@ -190,7 +190,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #f2ff38;
+  background: $main-color;
   border-radius: 3px;
   
   z-index: 1;
@@ -206,7 +206,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #f2ff38;
+  background: $main-color;
   border-radius: 3px;
   
   z-index: 1;
@@ -238,14 +238,14 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(2px, -1px);
-  background: #f2ff38;
+  background: $main-color;
 }
 
 #menuToggle-two input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(2px, -1px);
-  background: #f2ff38;
+  background: $main-color;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3)
