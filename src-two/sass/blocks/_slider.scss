@@ -1,6 +1,5 @@
 .slider{
     &__section{
-        // height: 550px;
         height: 100vh;
         margin-top: -60px;
     }
@@ -8,44 +7,30 @@
         height: 100%;
     }
     &__item{
-        // height: 550px;
         height: 100%;
         img{
             height: 100%;
-            // min-height: 550px;
-            // max-height: 551px;
             width: 100%;
             object-fit: cover;
-            // object-position: 0 -350px;
         }
-
         &-text{
-            // width: 520px;
             display: flex;
-            // justify-content: center;
             align-items: center;
             padding-top: 7px;
-            // margin: auto;
             margin-top: -7%;
             color: #f2ff38;
             font-family: 'Gotham Pro Black';
-            // font-family: 'Gotham Pro';
             text-transform: uppercase;
             opacity: 0.9;
             font-size: 65px;
             font-weight: 550;
-            // background-color:rgba(0, 0, 0, 0.3);
-            // height: 54px;
-            // border-radius: 10px;
             span{
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding-top: 10px;
-                // width: 520px;
-                // background-color:rgba(0, 0, 0, 0.3);
                 height: 54px;
-                // border-radius: 10px;
             }
             &-block{
                 margin-top: -1px;
@@ -55,18 +40,6 @@
 }
 
 @media (max-width: 1340px){
-    // .slider{
-    //     // &__section{
-    //     //     height: 390px;
-    //     // }
-    //     // &__item{
-    //     //     height: 430px;
-    //     //     // img{
-    //     //     //     // min-height: 99%;
-    //     //     //     // max-height: 100%;
-    //     //     // }
-    //     // }
-    // }
     .slick{
         &-dots{
             top: 390px;
@@ -82,21 +55,6 @@
 }
 
 @media (max-width: 1250px){
-    // .slider{
-    //  &__section{
-    //      height: 290px;
-    //  }
-    //  &__item{
-    //      height: 290px;
-    //      img{
-    //          object-position: 0 -170px;
-    //      }
-    //      &-text{
-    //          font-size: 35px;
-    //          margin-top: -7%;
-    //      }
-    //  }
-    // }
     .slick{
         &-dots{
             top: 310px;
@@ -112,16 +70,17 @@
     }
     .slider{
         &__section{
-            height: 450px;
+            height: 50vh;
         }
         &__item{
-            height: 450px;
+            height: 50vh;
             img{
                 object-position: 0 -5px;
             }
             &-text{
-                margin-top: -8%;
+                margin-top: -10%;
                 text-align: center;
+                font-size: 45px;
             }
         }
     }

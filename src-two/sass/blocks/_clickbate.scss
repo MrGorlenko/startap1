@@ -1,11 +1,13 @@
 .clickbate{
     display: flex;
     height: 100%;
+    flex-wrap: wrap;
     &__section{
-        height: 600px;
+        height: 1000px;
+        margin-top: 50px;
     }
     &__title{
-        margin-top: 90px;
+        margin-top: 0px;
         margin-bottom: 20px;
     }
     &__subtitle{
@@ -29,9 +31,10 @@
     }
     &__text{
         width: 50%;
-        height: 100%;
+        height: 50%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     &__list{
         font-size: 23px;
@@ -43,8 +46,7 @@
     }
     &__form{
         width: 50%;
-        height: 100%;
-        // background-color: #f2ff38;
+        height: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,10 +55,8 @@
             flex-direction: column;
             align-items: center;
         }
-        form{
-            margin-top: 40px;
-        }
         &-title{
+            margin-top: 35px;
             width: 85%;
             margin-bottom: 20px;
             font-family: 'Gotham Pro Black';
@@ -104,13 +104,44 @@
             }
         }
     }
+    &__about{
+        margin-top: 50px;
+        width: 100%;
+        height: 50%;   
+        display: flex;
+        flex-wrap: wrap;
+        &-title{
+            font-family: 'Gotham Pro Black';
+        }
+        &-list{
+            margin-left: 20px;
+            font-size: 25px;
+            &-block{
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+        &-item{
+            font-weight: bold;
+        }
+        &-logo{
+            &-block{
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                img{
+                    max-width: 85%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1250px){
     .clickbate{
-        &__section{
-            height: 530px;
-        }
         &__title{
             margin-top: 65px;
         }
@@ -136,6 +167,9 @@
                 width: 100%;
             }
         }
+        &__about{
+            margin-top: 120px;
+        }
     }
 
 }
@@ -144,18 +178,18 @@
     .clickbate{
         flex-wrap: wrap;
         &__section{
-            height: 915px;
+            height: 1515px;
         }
         &__text{
             width: 100%;
-            height: 50%;
+            height: 25%;
         }
         &__list{
             padding-left: 40px;
         }
         &__form{
             width: 100%;
-            height: 50%;
+            height: 35%;
             form{
                 width: 85%;
             }
@@ -163,18 +197,42 @@
                 width: 80%;
             }
         }
+        &__about{
+            height: 35%;
+            margin-top: 55px;
+            &-title{
+                font-family: 'Gotham Pro';
+            }
+            &-list{
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                &-block{
+                    width: 100%;
+                }
+            }
+            &-logo{
+                &-block{
+                    display: none;
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 670px){
     .clickbate{
+        &__section{
+            margin-top: 0;
+            height: 1200px;
+        }
         &__subtitle{
             text-align: center;
             width: 100%;
             font-size: 18px;
         }
         &__text{
-            height: 45%;
+            height: 25%;
         }
         &__base{
             text-align: center;
@@ -223,11 +281,26 @@
                 }
             }
         }
+        &__about{
+            margin-top: 0;
+            height: 25%;
+            &-title{
+                margin-bottom: 0;
+                margin-top: 0;
+                height: 65px;
+            }
+            &-list{
+                font-size: 21px;
+            }
+        }
     }
 }
 
 @media (max-width: 410px){
     .clickbate{
+        &__section{
+            height: 1170px;
+        }
         &__base{
             text-align: justify;
         }
@@ -242,6 +315,12 @@
                 a{
                     padding-left: 15px;
                 }
+            }
+        }
+        &__about{
+            height: 22%;
+            &-list{
+                font-size: 18px;
             }
         }
     }
