@@ -1286,12 +1286,12 @@ img {
 
 @media (max-width: 480px) {
   .slider__item-pic__three {
-    -o-object-position: -120px 10px !important;
-       object-position: -120px 10px !important;
+    -o-object-position: 0px 10px !important;
+       object-position: 0px 10px !important;
   }
   .slider__item-pic__four {
-    -o-object-position: -175px 10px !important;
-       object-position: -175px 10px !important;
+    -o-object-position: 0px 10px !important;
+       object-position: 0px 10px !important;
   }
 }
 

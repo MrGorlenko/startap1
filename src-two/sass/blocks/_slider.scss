@@ -167,11 +167,10 @@
 @media (max-width: 480px){
     .slider__item-pic{
         &__three{
-        object-position: -120px 10px !important;
+        object-position: 0px 10px !important;
         }
         &__four{
-        object-position: -175px 10px !important;
-        // display: none;
+        object-position: 0px 10px !important;
         }
     }
 }
