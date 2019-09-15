@@ -1,9 +1,11 @@
+@import "colors";
+
 .form{
     flex-wrap: wrap;
     display: flex;
     height: 100%;
     &__section{
-        background-color: darken( #f2ff38, $amount: 15);
+        background-color: darken( $main-color, $amount: 15);
         height: 430px;
     }
     &-image{
